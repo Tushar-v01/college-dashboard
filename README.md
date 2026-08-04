@@ -15,7 +15,7 @@ A full-stack college management system built with Next.js and PostgreSQL, with *
 ### What each role can do
 
 | | Admin | Teacher | Student |
-|---|---|---|---|---|
+|---|---|---|---|
 | Manage Teachers / Students / Parents / Departments / Subjects / Lessons | ✅ | view only | ❌ |
 | Manage Exams / Assignments / Results / Attendance (own lessons only for teachers) | ✅ | ✅ | view own |
 | Manage Events / Announcements | ✅ | ❌ | view relevant | 
