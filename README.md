@@ -1,6 +1,6 @@
 # CollegeDB — College Management Dashboard
 
-A full-stack college management system built with Next.js and PostgreSQL, with **self-hosted authentication** (no third-party auth service) and four role-based dashboards: Admin, Teacher, Student, and Parent.
+A full-stack college management system built with Next.js and PostgreSQL, with **self-hosted authentication** (no third-party auth service) and four role-based dashboards: Admin, Teacher,  and Student.
 
 ## Features
 
@@ -14,12 +14,12 @@ A full-stack college management system built with Next.js and PostgreSQL, with *
 
 ### What each role can do
 
-| | Admin | Teacher | Student | Parent |
+| | Admin | Teacher | Student |
 |---|---|---|---|---|
-| Manage Teachers / Students / Parents / Departments / Subjects / Lessons | ✅ | view only | ❌ | ❌ |
-| Manage Exams / Assignments / Results / Attendance (own lessons only for teachers) | ✅ | ✅ | view own | view child's |
-| Manage Events / Announcements | ✅ | ❌ | view relevant | view relevant |
-| Change own password | ✅ | ✅ | ✅ | ✅ |
+| Manage Teachers / Students / Parents / Departments / Subjects / Lessons | ✅ | view only | ❌ |
+| Manage Exams / Assignments / Results / Attendance (own lessons only for teachers) | ✅ | ✅ | view own |
+| Manage Events / Announcements | ✅ | ❌ | view relevant | 
+| Change own password | ✅ | ✅ | ✅ |
 
 ## Tech Stack
 
