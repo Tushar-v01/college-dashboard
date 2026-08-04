@@ -96,7 +96,7 @@ There is no sign-up page. Every seeded account uses the password:
 password123
 ```
 
-Sample usernames: `admin1`, `admin2` · `teacher1`–`teacher15` · `student1`–`student50` · `parentId1`–`parentId25`.
+Sample usernames: `admin1`, `admin2` · `teacher1`–`teacher15` · `student1`–`student50` .
 
 After logging in, change your password from **Settings** in the sidebar.
 
