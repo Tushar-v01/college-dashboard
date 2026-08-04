@@ -1,13 +1,13 @@
 # CollegeDB — College Management Dashboard
 
-A full-stack college management system built with Next.js and PostgreSQL, with **self-hosted authentication** (no third-party auth service) and four role-based dashboards: Admin, Teacher,  and Student.
+A full-stack college management system built with Next.js and PostgreSQL, with **self-hosted authentication** (no third-party auth service) and four role-based dashboards: Admin, Teacher,and Student.
 
 ## Features
 
 - **Custom authentication** — username/password login handled entirely by this app (Auth.js Credentials provider + Prisma + bcrypt password hashing). No external auth service; you own the user data and password hashes.
 - **Role-based access control** — middleware restricts every route by role, and each role sees a different set of menu items and dashboard.
 - **Admin-provisioned accounts** — there is no public sign-up. Admins create Teacher/Student/Parent accounts (with an initial password); users can change their own password afterward from Settings.
-- **Full CRUD** across every entity: Teachers, Students, Parents, Departments, Subjects, Lessons, Exams, Assignments, Results, Attendance, Events, and Announcements.
+- **Full CRUD** across every entity: Teachers, Students, Departments, Subjects, Lessons, Exams, Assignments, Results, Attendance, Events, and Announcements.
 - **Self-service password change** from the Settings page.
 - **Profile page** — reachable from the round avatar menu in the top bar, shows the logged-in user's own details.
 - **Weekly class schedule** (react-big-calendar) per teacher/student, correctly laid out by day and time.
@@ -132,7 +132,3 @@ src/
 | `npx prisma studio` | Browse the database in a GUI |
 | `npx prisma migrate reset` | Drop, re-migrate, and re-seed the database |
 
-## Notes
-
-- This project was forked from a Clerk-based version of the same dashboard and had its auth layer fully replaced with a self-hosted implementation — no Clerk dependency remains.
-- Password hashes are stored per-role (`Admin`, `Teacher`, `Student`, `Parent` each have their own `password` column); login looks up the username across all four tables.
